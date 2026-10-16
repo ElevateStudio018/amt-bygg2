@@ -154,6 +154,20 @@
     });
   });
 
+  /* Stora A:et i bakgrunden byggs upp i takt med scrollen */
+  var brandA = document.querySelector('.brand-a');
+  if (brandA) {
+    var root = document.documentElement, aQueued = false;
+    var setProgress = function () {
+      var max = root.scrollHeight - window.innerHeight;
+      root.style.setProperty('--scroll', max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)).toFixed(4) : 1);
+      aQueued = false;
+    };
+    window.addEventListener('scroll', function () { if (!aQueued) { aQueued = true; requestAnimationFrame(setProgress); } }, { passive: true });
+    window.addEventListener('resize', setProgress);
+    setProgress();
+  }
+
   /* Årtal i sidfot */
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
