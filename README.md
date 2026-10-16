@@ -30,9 +30,13 @@ Formulären öppnar idag ett förifyllt mejl till amtbygg@amtgroup.se. För att 
 
 Gamla adressen `/skadereparation` pekar vidare till `/anmal-skada/`.
 
-## Typsnitt och bilder
+## Typsnitt, svep och bilder
 
-Rubriker, meny och etiketter använder Montserrat (SIL Open Font License), som ligger närmast loggans geometriska bokstäver. Brödtext är Hanken Grotesk. Båda ligger lokalt i `assets/fonts/`.
+Loggan är egenritad och finns inte som typsnitt. All text sätts därför i Lexend (SIL Open Font License), som har samma geometriska, jämntjocka form som loggans bokstäver – runda G med tvärslå, raka Y och T. Typsnittet ligger lokalt i `assets/fonts/`.
+
+Sidan har vit bas. De blå och guldfärgade sveps som återkommer ligger i `assets/brand/swoosh.svg` (fristående svep, klassen `has-swoosh` på en sektion, med `has-swoosh--r`/`--l` för placering) och `assets/brand/swoosh-edge.svg` (vit våg med svep i nederkant av bildheros och helbredda bilder). Startsidans hero ritar sina svep direkt i HTML så att de kan animeras in.
+
+Startsidans hero är bilden `hero-goteborg` (från ElevateStudio018/amt-bygg).
 
 Bilderna `goteborg-*` och `bygg-arbetsplats` kommer från Unsplash (fri att använda kommersiellt, ingen attribuering krävs):
 
@@ -41,5 +45,3 @@ Bilderna `goteborg-*` och `bygg-arbetsplats` kommer från Unsplash (fri att anv�
 | `goteborg-kranar`, `goteborg-hamn` | Dmitrii E. |
 | `goteborg-eriksberg` | Jeet Datta |
 | `bygg-arbetsplats` | Glenov Brankovic |
-
-Startsidans film (`assets/video/hero-stad-*.mp4`, stillbild `assets/img/hero-stad-poster.jpg`) är Mixkit-klipp 4010 under Mixkit License (fri att använda kommersiellt). Den är komprimerad med ffmpeg utan ljud, i två format: WebM/VP9 (CRF 50) och MP4/H.264 (CRF 31) som reserv. Båda finns i 1600 px för dator och 960 px för mobil.

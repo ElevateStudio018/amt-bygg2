@@ -19,12 +19,11 @@
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/Montserrat-normal-100_900.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/HankenGrotesk-normal-300_700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Lexend-normal-100_900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/patterns.css">
 <link rel="stylesheet" href="assets/css/main.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "@id": "https://www.amtgroup.se/#organisation", "name": "AMT Bygg", "legalName": "AMT Byggentreprenad AB", "url": "https://www.amtgroup.se/", "logo": "https://www.amtgroup.se/assets/brand/icon-512.png", "image": "https://www.amtgroup.se/assets/img/hero-stad-poster.jpg", "telephone": "+4631454045", "email": "amtbygg@amtgroup.se", "foundingDate": "2019", "taxID": "559212-4555", "slogan": "AMT Bygg – Tillsammans.", "address": {"@type": "PostalAddress", "streetAddress": "Marieholmsgatan 54", "postalCode": "41502", "addressLocality": "Göteborg", "addressRegion": "Västra Götalands län", "addressCountry": "SE"}, "areaServed": "Göteborgsregionen", "award": "Di Gasell 2025", "knowsAbout": ["Skadereparationer", "Lokalanpassningar", "Byggentreprenad", "Totalentreprenad", "Delentreprenad"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "@id": "https://www.amtgroup.se/#organisation", "name": "AMT Bygg", "legalName": "AMT Byggentreprenad AB", "url": "https://www.amtgroup.se/", "logo": "https://www.amtgroup.se/assets/brand/icon-512.png", "image": "https://www.amtgroup.se/assets/img/hero-goteborg-1920.jpg", "telephone": "+4631454045", "email": "amtbygg@amtgroup.se", "foundingDate": "2019", "taxID": "559212-4555", "slogan": "AMT Bygg – Tillsammans.", "address": {"@type": "PostalAddress", "streetAddress": "Marieholmsgatan 54", "postalCode": "41502", "addressLocality": "Göteborg", "addressRegion": "Västra Götalands län", "addressCountry": "SE"}, "areaServed": "Göteborgsregionen", "award": "Di Gasell 2025", "knowsAbout": ["Skadereparationer", "Lokalanpassningar", "Byggentreprenad", "Totalentreprenad", "Delentreprenad"]}</script>
 </head>
 <body class="has-hero">
 
@@ -110,34 +109,22 @@
 
 
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__media">
-    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-stad-poster.jpg" aria-hidden="true">
-      <source src="assets/video/hero-stad-960.webm" type="video/webm" media="(max-width: 760px)">
-      <source src="assets/video/hero-stad-960.mp4" type="video/mp4" media="(max-width: 760px)">
-      <source src="assets/video/hero-stad-1600.webm" type="video/webm">
-      <source src="assets/video/hero-stad-1600.mp4" type="video/mp4">
-    </video>
-  </div>
+  <div class="hero__media"><picture><source type="image/webp" srcset="assets/img/hero-goteborg-640.webp 640w, assets/img/hero-goteborg-1280.webp 1280w, assets/img/hero-goteborg-1920.webp 1920w, assets/img/hero-goteborg-2560.webp 2560w" sizes="(max-width: 760px) 1280px, 100vw"><img src="assets/img/hero-goteborg-1280.jpg" srcset="assets/img/hero-goteborg-640.jpg 640w, assets/img/hero-goteborg-1280.jpg 1280w, assets/img/hero-goteborg-1920.jpg 1920w, assets/img/hero-goteborg-2560.jpg 2560w" sizes="(max-width: 760px) 1280px, 100vw" width="1280" height="740" alt="Byggarbetare blickar ut över Göteborgs hamn med varvskranar och stadssiluett" fetchpriority="high"></picture></div>
   <div class="wrap hero__body">
-    <span class="hero__kicker">Byggentreprenör i Göteborgsregionen sedan 2019</span>
     <h1 id="hero-title">Ett modernt byggbolag med starka traditioner</h1>
-    <p class="hero__lead">Skadereparationer, lokalanpassningar och entreprenad – för försäkringsbolag, fastighetsägare och byggföretag.</p>
-    <div class="btn-row">
-      <a class="btn btn--gold" href="kontakt/">Kontakta oss <span class="arr" aria-hidden="true"></span></a>
-      <a class="btn btn--ghost-light" href="anmal-skada/">Anmäl skada</a>
-    </div>
+    <p class="hero__lead">Skadereparationer, lokalanpassningar och entreprenad i Göteborgsregionen.</p>
+    <a class="btn btn--light" href="affarsomraden/">Våra affärsområden <span class="arr" aria-hidden="true"></span></a>
   </div>
-  <div class="hero__bar">
-    <div class="wrap">
-      <nav class="hero__links" aria-label="Affärsområden"><a href="affarsomraden/skadereparationer/"><span class="hero__links-num">01</span><span class="hero__links-title">Skadereparationer</span><span class="arr" aria-hidden="true"></span></a><a href="affarsomraden/lokalanpassningar/"><span class="hero__links-num">02</span><span class="hero__links-title">Lokalanpassningar</span><span class="arr" aria-hidden="true"></span></a><a href="affarsomraden/entreprenad/"><span class="hero__links-num">03</span><span class="hero__links-title">Entreprenad</span><span class="arr" aria-hidden="true"></span></a></nav>
-      <button class="hero__pause" type="button" aria-pressed="false" data-video-toggle><span class="visually-hidden">Pausa filmen</span></button>
-    </div>
-  </div>
+  <svg class="hero__edge" viewBox="0 0 1600 240" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path class="hero__edge-fill" d="M0 240V214C420 206 900 150 1240 92C1380 68 1500 52 1600 46V240Z"/>
+    <path class="sw sw--blue" d="M-20 206C420 198 880 146 1220 86C1370 60 1490 42 1620 34C1500 54 1390 74 1240 104C900 170 430 214-20 206Z"/>
+    <path class="sw sw--gold" d="M360 216C740 196 1060 150 1320 102C1430 82 1530 70 1620 66C1530 82 1440 98 1340 118C1080 172 760 214 360 216Z"/>
+  </svg>
 </section>
 
 <section class="section bg-paper" aria-labelledby="om-title">
   <div class="wrap intro">
-    <div class="intro__media reveal"><picture><source type="image/webp" srcset="assets/img/hero-goteborg-640.webp 640w, assets/img/hero-goteborg-1280.webp 1280w, assets/img/hero-goteborg-1920.webp 1920w, assets/img/hero-goteborg-2560.webp 2560w" sizes="(max-width: 900px) 100vw, 45vw"><img src="assets/img/hero-goteborg-1280.jpg" srcset="assets/img/hero-goteborg-640.jpg 640w, assets/img/hero-goteborg-1280.jpg 1280w, assets/img/hero-goteborg-1920.jpg 1920w, assets/img/hero-goteborg-2560.jpg 2560w" sizes="(max-width: 900px) 100vw, 45vw" width="1280" height="740" alt="Hantverkare från AMT Bygg blickar ut över Göteborgs hamn" loading="lazy" decoding="async"></picture></div>
+    <div class="intro__media reveal"><picture><source type="image/webp" srcset="assets/img/bygg-arbetsplats-640.webp 640w, assets/img/bygg-arbetsplats-1280.webp 1280w" sizes="(max-width: 900px) 100vw, 45vw"><img src="assets/img/bygg-arbetsplats-1280.jpg" srcset="assets/img/bygg-arbetsplats-640.jpg 640w, assets/img/bygg-arbetsplats-1280.jpg 1280w" sizes="(max-width: 900px) 100vw, 45vw" width="1280" height="960" alt="Byggarbetsplats i Göteborg" loading="lazy" decoding="async"></picture></div>
     <div class="intro__body reveal" style="--d:.1s">
       <span class="eyebrow">Om oss</span>
       <h2 id="om-title">Byggbolaget från Marieholmsgatan</h2>
@@ -234,8 +221,7 @@
   </div>
 </section>
 
-<section class="section bg-navy" style="overflow:hidden" aria-labelledby="ls-title">
-  <div class="pattern pat-grid pat--white" style="--pat-o:.07"></div>
+<section class="section bg-white has-swoosh has-swoosh--r" aria-labelledby="ls-title">
   <div class="wrap" style="position:relative">
     <div class="sec-head sec-head--slim">
       <div class="sec-head__meta"><span class="sec-head__num">03</span><span class="sec-head__label">Ledningssystem</span><a class="sec-head__aside link-arrow" href="om-oss/ledningssystem/"><span>Läs mer</span><span class="arr" aria-hidden="true"></span></a></div>
@@ -246,7 +232,7 @@
         <p class="lead mt-m">Povel binder samman våra egna ambitioner med alla de krav som ställs på byggföretag idag, vilket ger våra kunder och medarbetare en trygghet när de jobbar med oss.</p>
       </div>
       <div class="split__b--narrow reveal" style="--d:.1s">
-        <img src="assets/logos/povel-white.png" alt="Povel – processorienterad verksamhetsledning" width="200" height="200" loading="lazy" style="width:min(200px,60%);opacity:.95">
+        <img src="assets/logos/povel.png" alt="Povel – processorienterad verksamhetsledning" width="200" height="200" loading="lazy" style="width:min(200px,60%);opacity:.95">
       </div>
     </div>
     <div class="iso mt-xl reveal">
@@ -281,8 +267,7 @@
 </section>
 
 
-<section class="cta-band" aria-labelledby="cta-kontakt">
-  <div class="pattern pat-wood pat--blue pattern--fade-l"></div>
+<section class="cta-band has-swoosh" aria-labelledby="cta-kontakt">
   <div class="wrap">
     <div class="cta-band__text reveal">
       <hr class="rule-gold">

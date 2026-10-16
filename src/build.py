@@ -298,8 +298,7 @@ def p_partners(ctx, arg=''):
 def p_cta(ctx, arg=''):
     if arg == 'skada':
         return f'''
-<section class="cta-band" aria-labelledby="cta-skada">
-  <div class="pattern pat-wood pat--blue pattern--fade-l"></div>
+<section class="cta-band has-swoosh" aria-labelledby="cta-skada">
   <div class="wrap">
     <div class="cta-band__text reveal">
       <hr class="rule-gold">
@@ -316,8 +315,7 @@ def p_cta(ctx, arg=''):
   </div>
 </section>'''
     return f'''
-<section class="cta-band" aria-labelledby="cta-kontakt">
-  <div class="pattern pat-wood pat--blue pattern--fade-l"></div>
+<section class="cta-band has-swoosh" aria-labelledby="cta-kontakt">
   <div class="wrap">
     <div class="cta-band__text reveal">
       <hr class="rule-gold">
@@ -583,7 +581,7 @@ def jsonld(meta):
         'legalName': COMPANY['legal'],
         'url': SITE_URL + '/',
         'logo': SITE_URL + '/assets/brand/icon-512.png',
-        'image': SITE_URL + '/assets/img/hero-stad-poster.jpg',
+        'image': SITE_URL + '/assets/img/hero-goteborg-1920.jpg',
         'telephone': COMPANY['phone_href'],
         'email': COMPANY['email'],
         'foundingDate': '2019',
@@ -628,8 +626,7 @@ def layout(meta, body_html):
 <link rel="icon" href="{ctx.asset('brand/favicon.svg')}" type="image/svg+xml">
 <link rel="icon" href="{ctx.asset('brand/favicon-32.png')}" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{ctx.asset('brand/apple-touch-icon.png')}">
-<link rel="preload" href="{ctx.asset('fonts/Montserrat-normal-100_900.woff2')}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{ctx.asset('fonts/HankenGrotesk-normal-300_700.woff2')}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{ctx.asset('fonts/Lexend-normal-100_900.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{ctx.asset('css/fonts.css')}">
 <link rel="stylesheet" href="{ctx.asset('css/patterns.css')}">
 <link rel="stylesheet" href="{ctx.asset('css/main.css')}">
