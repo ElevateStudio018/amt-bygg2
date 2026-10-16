@@ -795,25 +795,3 @@ a.cell:hover .cell__img img { transform: scale(1.04); }
 .step.in::after, .step:hover .step__mark::after, .is-visible .step__mark::after { transform: scale(1); }
 .hero__kicker { display: inline-flex; align-items: center; gap: 14px; font-family: var(--f-label); font-size: .76rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(255, 255, 255, .9); margin-bottom: 22px; }
 .hero__kicker::before { content: ""; }
-
-/* ---------- Loggan över hela sidan ----------
-   Ett stort A ligger fast bakom innehållet. Det blå benet växer upp,
-   det marina benet ritas ner och guldfoten landar strax före sidfoten.
-   --scroll (0–1) sätts av main.js. Sektionerna är genomskinliga så att A:et syns. */
-.brand-a {
-  --s: var(--scroll, 1);
-  --a: clamp(0, var(--s) * 2.9, 1);
-  --b: clamp(0, var(--s) * 2.5 - .75, 1);
-  --c: clamp(0, var(--s) * 5 - 3, 1);
-  position: fixed; z-index: -1; pointer-events: none;
-  right: -4vw; bottom: -2vh; height: 104vh; aspect-ratio: 53.4 / 54.5; max-width: 104vw;
-  opacity: .09;
-}
-.brand-a svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.brand-a__blue { fill: var(--blue); clip-path: inset(calc((1 - var(--a)) * 100%) 0 0 0); }
-.brand-a__navy { fill: var(--navy); clip-path: inset(0 0 calc((1 - var(--b)) * 100%) 0); }
-.brand-a__gold { fill: var(--gold); opacity: var(--c); transform: translateY(calc((1 - var(--c)) * -12%)); }
-.bg-white, .bg-paper, .bg-stone, .bg-blue, .page-hero, .cta-band { background: transparent; }
-@media (max-width: 760px) { .brand-a { right: -30vw; height: 80vh; opacity: .06; } }
-@media (prefers-reduced-motion: reduce) { .brand-a { --s: 1; } }
-@media print { .brand-a { display: none; } }
