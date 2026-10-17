@@ -36,7 +36,7 @@ Loggan är egenritad och finns inte som typsnitt. All text sätts därför i Lex
 
 Sidan har vit bas. De blå och guldfärgade sveps som återkommer ligger i `assets/brand/swoosh.svg` (kontaktbandet, klassen `has-swoosh`) och `assets/brand/swoosh-edge.svg` (vit våg med svep, används i dag inte). Startsidans hero ritar sina svep direkt i HTML så att de kan animeras in.
 
-Formspråket är en koncernprofil (sist i `assets/css/main.css`, "Koncernprofil"): raka kanter utan skuggor, tunna linjer mellan sektioner, en servicerad med telefon och mejl överst, ett nyckeltalsband under startsidans hero, en Aktuellt-del på startsidan och breda bildbanderoller överst på undersidorna. Aktuellt-delen bygger bara på fakta som redan finns på sajten; byt ut eller lägg till nyheter i `src/pages/index.html`. Sektionsnummer skrivs som text och listpunkterna är små fyrkanter. De blå och gula svepen finns kvar i startsidans hero och i kontaktbandet längst ner på varje sida.
+Formspråket är en koncernprofil (sist i `assets/css/main.css`, "Koncernprofil"): raka kanter utan skuggor, tunna linjer mellan sektioner, ett nyckeltalsband under startsidans hero, en Aktuellt-del på startsidan och breda bildbanderoller överst på undersidorna. Aktuellt-delen bygger bara på fakta som redan finns på sajten; byt ut eller lägg till nyheter i `src/pages/index.html`. Sektionsnummer skrivs som text och listpunkterna är små fyrkanter. De blå och gula svepen finns kvar i startsidans hero och i kontaktbandet längst ner på varje sida.
 
 Startsidans hero är bilden `hero-goteborg` (från ElevateStudio018/amt-bygg).
 

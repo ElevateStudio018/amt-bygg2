@@ -757,29 +757,14 @@ a.cell:hover .cell__img img { transform: scale(1.04); }
 .cell__tag { display: inline-flex; align-items: center; gap: 10px; }
 .step__mark::after { left: -4px; width: 9px; height: 9px; transform: scale(0); }
 .step.in::after, .step:hover .step__mark::after, .is-visible .step__mark::after { transform: scale(1); }
-.hero__kicker { display: inline-flex; align-items: center; gap: 14px; font-family: var(--f-label); font-size: .76rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(255, 255, 255, .9); margin-bottom: 22px; }
-.hero__kicker::before { content: ""; width: 32px; height: 2px; background: var(--gold); }
 
 /* ==========================================================================
    Koncernprofil
    Raka kanter, inga skuggor, tunna linjer och gott om luft. Svepen finns
    kvar i startsidans hero och i kontaktbandet längst ner på varje sida.
    ========================================================================== */
-:root { --r: 0px; --r-sm: 0px; --shadow: none; --header-h: 84px; --top-h: 38px; }
+:root { --r: 0px; --r-sm: 0px; --shadow: none; --header-h: 84px; --top-h: 0px; }
 html { scroll-padding-top: calc(var(--header-h) + var(--top-h) + 24px); }
-
-/* Servicerad överst */
-.topbar { background: var(--navy-900); color: rgba(255, 255, 255, .72); font-size: .78rem; letter-spacing: .01em; }
-.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: var(--top-h); }
-.topbar__links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
-.topbar a { transition: color .2s; }
-.topbar a:hover { color: var(--white); }
-.has-hero .topbar { background: rgba(10, 16, 34, .38); box-shadow: 0 1px 0 rgba(255, 255, 255, .12); }
-.has-hero.is-scrolled .topbar { background: var(--navy-900); box-shadow: none; }
-.has-hero .site-header__main { box-shadow: 0 1px 0 rgba(255, 255, 255, .14); }
-.has-hero.is-scrolled .site-header__main { box-shadow: none; }
-.menu-open .topbar { visibility: hidden; }
-@media (max-width: 760px) { .topbar__info, .topbar__links li:nth-child(2) { display: none; } .topbar .wrap { justify-content: flex-end; } }
 
 /* Sidhuvud och meny */
 .brand img { height: 24px; }
