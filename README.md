@@ -34,9 +34,9 @@ Gamla adressen `/skadereparation` pekar vidare till `/anmal-skada/`.
 
 Loggan är egenritad och finns inte som typsnitt. All text sätts därför i Lexend (SIL Open Font License), som har samma geometriska, jämntjocka form som loggans bokstäver – runda G med tvärslå, raka Y och T. Typsnittet ligger lokalt i `assets/fonts/`.
 
-Sidan har vit bas. De blå och guldfärgade sveps som återkommer ligger i `assets/brand/swoosh.svg` (fristående svep, klassen `has-swoosh` på en sektion, med `has-swoosh--r`/`--l` för placering) och `assets/brand/swoosh-edge.svg` (vit våg med svep i nederkant av bildheros och helbredda bilder). Startsidans hero ritar sina svep direkt i HTML så att de kan animeras in.
+Sidan har vit bas. De blå och guldfärgade sveps som återkommer ligger i `assets/brand/swoosh.svg` (kontaktbandet, klassen `has-swoosh`) och `assets/brand/swoosh-edge.svg` (vit våg med svep, används i dag inte). Startsidans hero ritar sina svep direkt i HTML så att de kan animeras in.
 
-Loggans A bär knappar och bildramar (sist i `assets/css/main.css`, "Loggan genom hela sidan"): knapparnas högerkant lutar som A:ets ben (bredd = 0,43 × höjd) och bilderna i `intro__media`, `page-hero__aside` och `job__media` ramas in som A:et – fotot är högra benet, med blått ben och guldfot. Övriga detaljer är medvetet strama: tunna linjer, sektionsnummer som text och små fyrkantiga listpunkter. Sidfoten och mobilmenyn har A-märket som vattenstämpel.
+Formspråket är en koncernprofil (sist i `assets/css/main.css`, "Koncernprofil"): raka kanter utan skuggor, tunna linjer mellan sektioner, en servicerad med telefon och mejl överst och ett nyckeltalsband under startsidans hero. Sektionsnummer skrivs som text och listpunkterna är små fyrkanter. De blå och gula svepen finns kvar i startsidans hero och i kontaktbandet längst ner på varje sida.
 
 Startsidans hero är bilden `hero-goteborg` (från ElevateStudio018/amt-bygg).
 

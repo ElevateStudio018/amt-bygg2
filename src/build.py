@@ -491,7 +491,17 @@ def header(ctx, active):
     return f'''
 <a class="skip-link" href="#main">Hoppa till innehållet</a>
 <header class="site-header">
-  <div class="wrap">
+  <div class="topbar">
+    <div class="wrap">
+      <p class="topbar__info"><span>Byggentreprenör i Göteborgsregionen sedan 2019</span></p>
+      <ul class="topbar__links">
+        <li><a href="tel:{COMPANY['phone_href']}">{COMPANY['phone']}</a></li>
+        <li><a href="mailto:{COMPANY['email']}">{COMPANY['email']}</a></li>
+        <li><a href="{ctx.url('karriar/')}">Karriär</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap site-header__main">
     <a class="brand" href="{ctx.url('')}" aria-label="AMT Bygg – till startsidan">
       <img class="brand__dark" src="{ctx.asset('brand/amt-bygg-logo.svg')}" alt="AMT Bygg" width="170" height="22">
       <img class="brand__light" src="{ctx.asset('brand/amt-bygg-logo-white.svg')}" alt="AMT Bygg" width="170" height="22">
