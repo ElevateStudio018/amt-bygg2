@@ -835,3 +835,40 @@ html { scroll-padding-top: calc(var(--header-h) + var(--top-h) + 24px); }
 
 /* Sidfot */
 .site-footer { border-top: 0; }
+
+/* Aktuellt: en stor nyhet och en lista, som på en koncernsajt */
+.news { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 4vw, 72px); align-items: start; }
+.news__lead, .news__item { display: block; color: inherit; }
+.news__img { aspect-ratio: 16 / 10; overflow: hidden; background: var(--navy); }
+.news__img picture, .news__img img, .news__thumb picture, .news__thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.news__lead:hover .news__img img, .news__item:hover .news__thumb img { transform: scale(1.04); }
+.news__tag { display: block; font-family: var(--f-label); font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-700); }
+.news__lead .news__tag { margin: 26px 0 12px; }
+.news__lead h3 { font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2.15rem); font-weight: 500; line-height: 1.18; max-width: 24ch; transition: color .25s var(--ease); }
+.news__lead p { margin-top: 14px; max-width: 58ch; color: var(--muted); }
+.news__list { display: flex; flex-direction: column; }
+.news__item { display: grid; grid-template-columns: 136px minmax(0, 1fr); gap: 22px; align-items: start; padding: 26px 0; border-top: 1px solid var(--line); }
+.news__item:first-child { padding-top: 0; border-top: 0; }
+.news__thumb { aspect-ratio: 4 / 3; overflow: hidden; background: var(--navy); }
+.news__item .news__tag { margin-bottom: 10px; }
+.news__item h3 { font-size: 1.1rem; font-weight: 500; line-height: 1.38; transition: color .25s var(--ease); }
+.news__lead:hover h3, .news__item:hover h3 { color: var(--blue-700); }
+@media (max-width: 900px) { .news { grid-template-columns: 1fr; } .news__item:first-child { padding-top: 26px; border-top: 1px solid var(--line); } }
+@media (max-width: 480px) { .news__item { grid-template-columns: 104px minmax(0, 1fr); gap: 16px; } }
+
+/* Undersidor: rubrik överst och en bred bildbanderoll under */
+.page-hero:has(.page-hero__aside picture) .page-hero__text { grid-column: 1 / span 9; padding-bottom: clamp(36px, 4vw, 60px); }
+.page-hero:has(.page-hero__aside picture) .page-hero__aside { grid-column: 1 / -1; min-height: 0; aspect-ratio: 21 / 8; margin-bottom: 0; }
+@media (max-width: 760px) { .page-hero:has(.page-hero__aside picture) .page-hero__aside { aspect-ratio: 4 / 3; } }
+
+/* Typografi: lugnare vikter, som en koncernprofil */
+h1, h2, .statement, .keyfigure__v { font-weight: 500; }
+.hero h1, .page-hero h1, .page-hero--image h1 { font-weight: 500; letter-spacing: -.03em; }
+h3, h4 { font-weight: 500; }
+.hero .btn-row { margin-top: 40px; }
+.hero .btn-row .btn { margin-top: 0; }
+.btn--ghost-light { --btn-bg: transparent; --btn-fg: var(--white); --btn-bd: rgba(255, 255, 255, .6); }
+.btn--ghost-light:hover { --btn-bg: var(--white); --btn-fg: var(--navy); --btn-bd: var(--white); }
+.sec-head__meta { flex-wrap: wrap; row-gap: 10px; }
+.sec-head__aside { white-space: nowrap; }
+@media (max-width: 560px) { .sec-head__aside { margin-left: 0; flex-basis: 100%; } }

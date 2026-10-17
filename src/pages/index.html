@@ -6,7 +6,10 @@
     <span class="hero__kicker">AMT Bygg – Tillsammans</span>
     <h1 id="hero-title">Ett modernt byggbolag med starka traditioner</h1>
     <p class="hero__lead">Skadereparationer, lokalanpassningar och entreprenad i Göteborgsregionen.</p>
-    <a class="btn btn--light" href="{{url affarsomraden/}}">Våra affärsområden {{arrow}}</a>
+    <div class="btn-row">
+      <a class="btn btn--light" href="{{url affarsomraden/}}">Våra affärsområden {{arrow}}</a>
+      <a class="btn btn--ghost-light" href="{{url anmal-skada/}}">Anmäl skada</a>
+    </div>
   </div>
   <svg class="hero__edge" viewBox="0 0 1600 240" preserveAspectRatio="none" aria-hidden="true" focusable="false">
     <path class="hero__edge-fill" d="M0 240V214C420 206 900 150 1240 92C1380 68 1500 52 1600 46V240Z"/>
@@ -54,6 +57,37 @@
   </div>
 </section>
 
+<section class="section bg-white" aria-labelledby="news-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--slim">
+      <div class="sec-head__meta"><span class="sec-head__num">02</span><span class="sec-head__label">Aktuellt</span><a class="sec-head__aside link-arrow" href="{{url om-oss/}}"><span>Mer om AMT Bygg</span>{{arrow}}</a></div>
+      <h2 id="news-title" class="reveal">Aktuellt från AMT Bygg</h2>
+    </div>
+    <div class="news">
+      <a class="news__lead reveal" href="{{url om-oss/}}">
+        <div class="news__img">{{pic goteborg-hamn|Göteborgs hamn i kvällsljus|(max-width: 900px) 100vw, 58vw}}</div>
+        <span class="news__tag">Utmärkelse</span>
+        <h3>AMT Bygg utsedda till Di Gasell 2025</h3>
+        <p>Dagens industri utser varje år de företag som vuxit snabbt och samtidigt visat sunda finanser. För oss är det ett kvitto på att arbetssättet håller.</p>
+      </a>
+      <div class="news__list">
+        <a class="news__item reveal" style="--d:.06s" href="{{url om-oss/ledningssystem/}}">
+          <div class="news__thumb">{{pic team-ritning|Medarbetare går igenom ritningar|200px}}</div>
+          <div><span class="news__tag">Kvalitet och miljö</span><h3>Certifierade i Povel – byggbranschens eget verksamhetsledningssystem</h3></div>
+        </a>
+        <a class="news__item reveal" style="--d:.12s" href="{{url partners/}}">
+          <div class="news__thumb">{{pic goteborg-eriksberg|Eriksbergskranen i Göteborg|200px}}</div>
+          <div><span class="news__tag">Engagemang</span><h3>Partner till IFK Göteborg, Frölunda Hockey Club och lokala föreningar</h3></div>
+        </a>
+        <a class="news__item reveal" style="--d:.18s" href="{{url karriar/}}">
+          <div class="news__thumb">{{pic renovering|Snickare sågar en skiva|200px}}</div>
+          <div><span class="news__tag">Karriär</span><h3>Vi söker servicesnickare i Göteborg</h3></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bleed bleed--text" aria-label="AMT Bygg – Tillsammans">
   {{pic team-ritning-bred|Medarbetare från AMT Bygg går igenom ritningar på arbetsplatsen}}
   <div class="bleed__text">
@@ -70,7 +104,7 @@
 <section class="section bg-white" aria-labelledby="skade-title">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-head__meta"><span class="sec-head__num">02</span><span class="sec-head__label">Ramavtal skadereparationer</span></div>
+      <div class="sec-head__meta"><span class="sec-head__num">03</span><span class="sec-head__label">Ramavtal skadereparationer</span></div>
       <h2 id="skade-title" class="reveal">Försäkringsbolagens partner – från besiktning till färdigställande.</h2>
       <p class="reveal" style="--d:.1s">Vi hanterar våra skadeärenden i Meps. Som skadehandläggare kan du känna dig trygg i att det blir en effektiv och proffsig process hela vägen.</p>
     </div>
@@ -95,7 +129,7 @@
 <section class="section bg-white" aria-labelledby="ls-title">
   <div class="wrap" style="position:relative">
     <div class="sec-head sec-head--slim">
-      <div class="sec-head__meta"><span class="sec-head__num">03</span><span class="sec-head__label">Ledningssystem</span><a class="sec-head__aside link-arrow" href="{{url om-oss/ledningssystem/}}"><span>Läs mer</span>{{arrow}}</a></div>
+      <div class="sec-head__meta"><span class="sec-head__num">04</span><span class="sec-head__label">Ledningssystem</span><a class="sec-head__aside link-arrow" href="{{url om-oss/ledningssystem/}}"><span>Läs mer</span>{{arrow}}</a></div>
     </div>
     <div class="split">
       <div class="split__a--wide reveal">
@@ -118,7 +152,7 @@
 <section class="section bg-paper" aria-labelledby="klienter-title">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-head__meta"><span class="sec-head__num">04</span><span class="sec-head__label">Klienter</span><a class="sec-head__aside link-arrow" href="{{url klienter/}}"><span>Alla klienter</span>{{arrow}}</a></div>
+      <div class="sec-head__meta"><span class="sec-head__num">05</span><span class="sec-head__label">Klienter</span><a class="sec-head__aside link-arrow" href="{{url klienter/}}"><span>Alla klienter</span>{{arrow}}</a></div>
       <h2 id="klienter-title" class="reveal">Förtroende från några av regionens mest krävande beställare.</h2>
       <p class="reveal" style="--d:.1s">Byggföretag, fastighetsbolag, bostadsorganisationer och industri – relationer byggda på förtroende och respekt.</p>
     </div>
@@ -129,7 +163,7 @@
 <section class="section bg-white" aria-labelledby="partners-title">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-head__meta"><span class="sec-head__num">05</span><span class="sec-head__label">Partners</span><a class="sec-head__aside link-arrow" href="{{url partners/}}"><span>Vårt engagemang</span>{{arrow}}</a></div>
+      <div class="sec-head__meta"><span class="sec-head__num">06</span><span class="sec-head__label">Partners</span><a class="sec-head__aside link-arrow" href="{{url partners/}}"><span>Vårt engagemang</span>{{arrow}}</a></div>
       <h2 id="partners-title" class="reveal">Vi bygger även utanför arbetsplatsen.</h2>
       <p class="reveal" style="--d:.1s">Som partner till IFK Göteborg, Frölunda Hockey Club, Örgryte IS och flera lokala föreningar stöttar vi idrotten i Göteborgsregionen – från elit till bredd.</p>
     </div>
