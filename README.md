@@ -36,7 +36,7 @@ Loggan är egenritad och finns inte som typsnitt. All text sätts därför i Lex
 
 Sidan har vit bas. De blå och guldfärgade sveps som återkommer ligger i `assets/brand/swoosh.svg` (fristående svep, klassen `has-swoosh` på en sektion, med `has-swoosh--r`/`--l` för placering) och `assets/brand/swoosh-edge.svg` (vit våg med svep i nederkant av bildheros och helbredda bilder). Startsidans hero ritar sina svep direkt i HTML så att de kan animeras in.
 
-Loggans A går igen i hela sidan (sist i `assets/css/main.css`, "Loggan genom hela sidan"): knapparnas högerkant lutar som A:ets ben (bredd = 0,43 × höjd), sektionsnummer och etiketter har guldfotens trapetsform, listpunkterna är små blå A-ben, linjen `rule-gold` är A:et uppdelat (`assets/brand/rule.svg`) och bilderna i `intro__media`, `page-hero__aside` och `job__media` ramas in som A:et – fotot är högra benet, med blått ben och guldfot. Sidfoten och mobilmenyn har A-märket som vattenstämpel.
+Loggans A bär knappar och bildramar (sist i `assets/css/main.css`, "Loggan genom hela sidan"): knapparnas högerkant lutar som A:ets ben (bredd = 0,43 × höjd) och bilderna i `intro__media`, `page-hero__aside` och `job__media` ramas in som A:et – fotot är högra benet, med blått ben och guldfot. Övriga detaljer är medvetet strama: tunna linjer, sektionsnummer som text och små fyrkantiga listpunkter. Sidfoten och mobilmenyn har A-märket som vattenstämpel.
 
 Startsidans hero är bilden `hero-goteborg` (från ElevateStudio018/amt-bygg).
 
